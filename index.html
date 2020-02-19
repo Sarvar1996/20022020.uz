@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>20.02.2020</title>
+    <link rel="shortcut icon" href="image/download.jpg" />
+
+
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(57229543, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/57229543" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+
+    <div class="bodies">
+        <div class="mg">
+            <div class="escape bold">KASKO2.0</div>
+            <div class="escape">
+                <span>into amazing experiences</span>
+            </div>
+
+            <img class="image" id="middle" src="image/mercedes.png">
+
+        </div>
+    </div>
+    <div class="center">
+        <div class="reveal-holder" data-aos="reveal-item">
+            <div class="reveal-block right" data-aos="reveal-right"></div>
+            <h1 class="mt10">Maximum borkdrive</h1>
+        </div>
+        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt praesentium, rerum voluptatem in reiciendis officia harum repudiandae tempore suscipit ex ea, adipisci ab porro.</p>
+    </div>
+    <div class="nolimits">
+        <div class="limittxt">
+            <h1 class="hlimit inline-photo show-on-scroll">Никаких<br> ограничений</h1>
+            <p class="plimit inline-photo show-on-scroll">Lorem ipsum dolor sit amet<br> consectetur adipisicing elit.<br> Cupiditate incidunt </p>
+        </div>
+        <div class="bmw"></div>
+    </div>
+    <div class="nolimits">
+        <div class="velocity"></div>
+        <div class="velocitytxt">
+            <h1 class="hvelocity inline-photo show-on-scroll">Никаких<br> ограничений</h1>
+            <p class="pvelocity inline-photo show-on-scroll">Lorem ipsum dolor sit amet<br> consectetur adipisicing elit.<br> Cupiditate incidunt </p>
+        </div>
+
+    </div>
+    <div class="nolimits">
+
+        <div class="safetxt">
+            <h1 class="hlimit inline-photo show-on-scroll">Никаких<br> ограничений</h1>
+            <p class="plimit inline-photo show-on-scroll">Lorem ipsum dolor sit amet<br> consectetur adipisicing elit.<br> Cupiditate incidunt </p>
+        </div>
+        <div class="safety"></div>
+
+    </div>
+    <div class="title">
+        <h1 class="texth1">Познайте КАСКО 2.0</h1>
+        <a href="https://www.insurance.uz/">
+            <div class="calculate">
+                <h3 class="cost">Рассчитать стоимость</h3>
+            </div>
+        </a>
+
+
+    </div>
+</body>
+<script>
+    AOS.init({
+        duration: 500,
+        easing: 'ease-out-quart',
+        once: true
+    });
+    $(document).ready(function() {
+        // Hide the div
+        $("#middle").hide();
+        $("#middle").delay(6800).fadeIn(500);
+    });
+
+</script>
+
+<script>
+    // Detect request animation frame
+    var scroll = window.requestAnimationFrame ||
+        // IE Fallback
+        function(callback) {
+            window.setTimeout(callback, 1000 / 60)
+        };
+    var elementsToShow = document.querySelectorAll('.show-on-scroll');
+
+    function loop() {
+
+        Array.prototype.forEach.call(elementsToShow, function(element) {
+            if (isElementInViewport(element)) {
+                element.classList.add('is-visible');
+            } else {
+                element.classList.remove('is-visible');
+            }
+        });
+
+        scroll(loop);
+    }
+
+    loop();
+
+    function isElementInViewport(el) {
+        // special bonus for those using jQuery
+        if (typeof jQuery === "function" && el instanceof jQuery) {
+            el = el[0];
+        }
+        var rect = el.getBoundingClientRect();
+        return (
+            (rect.top <= 0 &&
+                rect.bottom >= 0) ||
+            (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.top <= (window.innerHeight || document.documentElement.clientHeight)) ||
+            (rect.top >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+        );
+    }
+
+</script>
+
+
+
+
+
+</html>

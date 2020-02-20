@@ -1,14 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
-@font-face {
-    font-family: "San Francisco";
-    font-weight: 400;
-    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
-}
+
 
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto';
+
 }
 
 .bodies {
@@ -16,9 +15,9 @@ body {
     background-color: black;
     color: white;
     width: 100%;
-    font-family: "San Francisco";
     height: 100vh;
     overflow: hidden;
+    font-weight: 300;
     -webkit-backface-visibility: hidden;
     -webkit-perspective: 1000;
     -webkit-transform: translate3d(0, 0, 0);
@@ -34,28 +33,28 @@ body {
     font-weight: 700;
 }
 
+
 .escape {
     display: inline-block;
     overflow: hidden;
     font-size: 40px;
     white-space: nowrap;
     padding-top: 18%;
-    font-family: 'Roboto';
 
 }
 
 .escape:first-of-type {
-    animation: showup 7s 1;
+    animation: showup 5s 1;
 }
 
 .escape:last-of-type {
-    width: 470px;
-    animation: reveal 7s 1;
+    width: 770px;
+    animation: reveal 10s 1;
 }
 
 .escape:last-of-type span {
     margin-left: 0;
-    animation: slidein 7s 1;
+    animation: slidein 10s 1;
 }
 
 
@@ -70,11 +69,14 @@ body {
 .paragraph {
     margin: 0 20%;
     font-size: 30px;
+    font-weight: 300;
 
 }
 
 .mt10 {
     font-size: 50px;
+    font-weight: 900;
+
 }
 
 .char {
@@ -98,30 +100,80 @@ body {
 }
 
 .texth1 {
-  
+
     color: black;
     -moz-background-clip: text;
     -webkit-background-clip: text;
-    font-family: "San Francisco";
-     font-size: 70px;
+    font-size: 70px;
     font-weight: 900;
     line-height: .75;
     margin: 10px 0;
 }
-.calculate{
+
+.calculate {
     border: 1px solid black;
     border-radius: 40px;
     margin-top: 100px;
     padding: 0 20px;
 }
-.cost{
+
+.cost {
     font-size: 30px;
+    font-weight: 500;
 }
-a{
+
+a {
     color: black;
-    text-decoration:none;
-    
+    text-decoration: none;
 }
+
+.benefits {
+    text-align: center;
+    color: white;
+    height: 80vh;
+    margin-top: -20px;
+    width: 100%;
+
+    background-color: #fcfaff;
+}
+
+.fishki {
+    display: inline-flex;
+    width: 100%;
+
+}
+
+.w25 {
+    width: 25%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    padding-top: 2%;
+    margin: 0 20px;
+
+}
+
+.headline {
+    padding-top: 8%;
+    font-size: 50px;
+    font-weight: 300;
+    color: black;
+}
+
+.headlines {
+    padding-top: 8%;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+}
+
+.icontitle {
+    font-size: 32px;
+    color: black;
+    font-weight: 300;
+}
+
+
 .nolimits {
     width: 100%;
     height: 100vh;
@@ -137,6 +189,7 @@ a{
     text-align: center;
     align-content: center;
 }
+
 .safetxt {
     width: 50%;
     background-color: black;
@@ -151,18 +204,49 @@ a{
     font-weight: 600;
     margin: 35% 0 0 15%;
     text-align: left;
-    font-family: "San Francisco";
 
 }
 
+.kottaro {
+    font-size: 50px;
+}
+
+.tekstsigmidi:hover {
+    color: red;
+}
+
+.watch {
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.tekstsigmidi {
+    display: -webkit-inline-box;
+    margin-top: 5%;
+}
+
 .plimit {
-    font-size: 32px;
+    font-size: 26px;
     text-align: left;
     margin-left: 15%;
     color: #555;
-    font-family: "San Francisco";
-    font-weight: 600;
-    line-height: 1.07143;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.velocitytxt {
+    width: 40%;
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+.velocity {
+    width: 60%;
+    background-image: url(image/180202.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .hvelocity {
@@ -170,26 +254,17 @@ a{
     line-height: 1.07143;
     font-weight: 600;
     margin: 30% 15% 0 0;
-    text-align: center;
-    font-family: "San Francisco";
+    text-align: left;
 
 }
 
 .pvelocity {
-    font-size: 32px;
-    text-align: center;
+    font-size: 24px;
+    text-align: left;
     margin-right: 15%;
     color: #555;
-    font-family: "San Francisco";
-    font-weight: 600;
-    line-height: 1.07143;
-}
-
-.velocitytxt {
-    width: 50%;
-    background-color: black;
-    color: white;
-    text-align: center;
+    line-height: 30px;
+    font-weight: 300;
 }
 
 .bmw {
@@ -209,13 +284,7 @@ a{
     background-repeat: no-repeat;
 }
 
-.velocity {
-    width: 60%;
-    background-image: url(image/180202.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
+
 
 .inline-photo {
     opacity: 0;
@@ -238,7 +307,7 @@ a{
     position: relative;
     display: inline-block;
     overflow: hidden;
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 .reveal-holder .reveal-block {
@@ -381,7 +450,7 @@ a{
 
     }
     100% {
-        opacity: 0;
+        opacity: 1;
     }
 }
 
@@ -413,14 +482,14 @@ a{
         width: 0px;
     }
     30% {
-        width: 470px;
+        width: 770px;
     }
     80% {
         opacity: 1;
     }
     100% {
-        opacity: 0;
-        width: 470px;
+        opacity: 1;
+        width: 770px;
     }
 }
 
@@ -436,9 +505,16 @@ a{
 }
 
 @media (max-width: 991px) {
+    .w25 {
+        width: 98%;
+    }
+.fishki {
+    display: block;
+ 
+}
     .image {
         top: 24%;
-        left: -45%;
+        left: -46%;
     }
     .escape {
         padding-top: 50%;
@@ -479,12 +555,12 @@ a{
         display: none;
     }
     .hvelocity {
-        margin: 30% 0 0 31%;
+        margin: 30% 0 0 40%;
     }
-    .pvelocity{
+    .pvelocity {
         margin-left: 40%;
     }
-    .safetxt{
+    .safetxt {
         width: 100%;
         background-image: url(image/saafe.png);
         background-repeat: no-repeat;
@@ -493,9 +569,8 @@ a{
 }
 
 @media (min-width: 1600px) {
-   .image {
+    .image {
         top: -7%;
         left: 0;
     }
 }
- 

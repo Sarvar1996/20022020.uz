@@ -46,7 +46,8 @@
                 <span>революция в страховании автомобилей</span>
             </div>
 
-            <img class="image" id="middle" src="image/mercedes.png">
+            <img class="image" id="first" src="image/first.jpg">
+            <img class="image" id="second" src="image/second.jpg">
 
         </div>
     </div>
@@ -144,10 +145,16 @@
         easing: 'ease-out-quart',
         once: true
     });
+     $(document).ready(function() {
+        // Hide the div
+        $("#first").show();
+        $("#first").delay(4400).fadeOut(1000);
+    });
+
     $(document).ready(function() {
         // Hide the div
-        $("#middle").hide();
-        $("#middle").delay(3900).fadeIn(500);
+        $("#second").hide();
+        $("#second").delay(4400).fadeIn(1000);
     });
 
 </script>

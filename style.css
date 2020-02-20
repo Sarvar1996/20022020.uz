@@ -25,8 +25,8 @@ body {
 
 .image {
     position: absolute;
-    top: -25%;
-    left: -17%;
+    top: 33%;
+    left: 5%;
 }
 
 .bold {
@@ -39,7 +39,7 @@ body {
     overflow: hidden;
     font-size: 40px;
     white-space: nowrap;
-    padding-top: 18%;
+    padding-top: 10%;
 
 }
 
